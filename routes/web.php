@@ -6,4 +6,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//new line added
+//new line added here
