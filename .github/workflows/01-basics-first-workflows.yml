@@ -3,8 +3,8 @@ name: 01 basics first workflows
 on: push
 
 jobs:
-    print0hello-word:
+    print-hello-world:
         runs-on: ubuntu-latest
         steps:
-            - name: Print Hello Word
-              run: echo "Hello Word"
+            - name: Print Hello World
+              run: echo "Hello World"
