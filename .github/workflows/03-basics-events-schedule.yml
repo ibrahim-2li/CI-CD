@@ -1,4 +1,4 @@
-name: 01 basics events filters workflows
+name: 03 basics events schedule
 
 on:
     schedule:
