@@ -38,7 +38,7 @@
 
         <main class="flex-grow">
             <section class="relative w-full h-screen" data-flickity='{ "autoPlay": 5000, "wrapAround": true, "fade": true }'>
-                <div class="carousel-cell w-full h-full bg-cover bg-center" style="background-image: url('https://picsum.photos/seed/shipping1/1920/1080');">
+                <div class="carousel-cell w-full h-full bg-cover bg-center" style="background-image: url('{{ asset('images/hero-shipping.jpg') }}');">
                     <div class="flex items-center justify-center h-full bg-black bg-opacity-60">
                         <div class="text-center text-white px-6">
                             <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4 animate-fade-in-down">Global Trade, Delivered</h1>
@@ -47,7 +47,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-cell w-full h-full bg-cover bg-center" style="background-image: url('https://picsum.photos/seed/warehouse1/1920/1080');">
+                <div class="carousel-cell w-full h-full bg-cover bg-center" style="background-image: url('{{ asset('images/hero-warehouse.jpg') }}');">
                     <div class="flex items-center justify-center h-full bg-black bg-opacity-60">
                         <div class="text-center text-white px-6">
                             <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4">State-of-the-Art Warehousing</h1>
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-cell w-full h-full bg-cover bg-center" style="background-image: url('https://picsum.photos/seed/containers1/1920/1080');">
+                <div class="carousel-cell w-full h-full bg-cover bg-center" style="background-image: url('{{ asset('images/hero-containers.jpg') }}');">
                     <div class="flex items-center justify-center h-full bg-black bg-opacity-60">
                         <div class="text-center text-white px-6">
                             <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4">Efficient Customs Clearance</h1>
@@ -73,21 +73,21 @@
                     <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">From point of origin to final destination, we provide a full spectrum of logistics services to meet your needs.</p>
                     <div class="grid md:grid-cols-3 gap-8">
                         <div class="group relative rounded-lg overflow-hidden shadow-2xl transform transition-transform duration-500 hover:-translate-y-2">
-                            <div class="h-80 bg-cover bg-center" style="background-image: url('https://picsum.photos/seed/airfreight1/600/800')"></div>
+                            <div class="h-80 bg-cover bg-center" style="background-image: url('{{ asset('images/service-shipping.jpg') }}')"></div>
                             <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-8 text-white transition-opacity duration-500 group-hover:bg-opacity-70">
                                 <h3 class="text-2xl font-bold mb-2">Global Shipping</h3>
                                 <p class="opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-full transition-all duration-500">Reliable and timely shipping solutions across the globe, whether by air, sea, or land.</p>
                             </div>
                         </div>
                         <div class="group relative rounded-lg overflow-hidden shadow-2xl transform transition-transform duration-500 hover:-translate-y-2">
-                            <div class="h-80 bg-cover bg-center" style="background-image: url('https://picsum.photos/seed/customs1/600/800')"></div>
+                            <div class="h-80 bg-cover bg-center" style="background-image: url('{{ asset('images/service-customs.jpg') }}')"></div>
                             <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-8 text-white transition-opacity duration-500 group-hover:bg-opacity-70">
                                 <h3 class="text-2xl font-bold mb-2">Customs Clearance</h3>
                                 <p class="opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-full transition-all duration-500">Navigating complex customs regulations to ensure your shipments are cleared without delay.</p>
                             </div>
                         </div>
                         <div class="group relative rounded-lg overflow-hidden shadow-2xl transform transition-transform duration-500 hover:-translate-y-2">
-                            <div class="h-80 bg-cover bg-center" style="background-image: url('https://picsum.photos/seed/racking1/600/800')"></div>
+                            <div class="h-80 bg-cover bg-center" style="background-image: url('{{ asset('images/service-warehousing.jpg') }}')"></div>
                             <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-8 text-white transition-opacity duration-500 group-hover:bg-opacity-70">
                                 <h3 class="text-2xl font-bold mb-2">Warehousing</h3>
                                 <p class="opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-full transition-all duration-500">Secure and flexible warehousing options to store your goods before, during, and after transit.</p>
@@ -107,25 +107,25 @@
                             <a href="#" class="text-blue-600 font-bold hover:underline">Learn more about our journey &rarr;</a>
                         </div>
                         <div class="rounded-lg overflow-hidden shadow-2xl">
-                             <img src="https://picsum.photos/seed/network1/800/600" alt="Global Network Map" class="w-full h-full object-cover">
+                             <img src="{{ asset('images/about-network.jpg') }}" alt="Global Network Map" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="values" class="py-20 bg-cover bg-fixed" style="background-image: url('https://picsum.photos/seed/valuesbg1/1920/1080')">
+            <section id="values" class="py-20 bg-blue-50">
                 <div class="container mx-auto px-6">
                     <h2 class="text-4xl font-bold text-center mb-12 text-blue-900">Our Core Values</h2>
                     <div class="grid md:grid-cols-3 gap-8">
-                        <div class="bg-white bg-opacity-80 backdrop-blur-md p-8 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
+                        <div class="bg-white p-8 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
                             <h3 class="text-2xl font-bold mb-2 text-blue-800">Integrity</h3>
                             <p>We uphold the highest standards of integrity, ensuring transparency and trust in all our actions.</p>
                         </div>
-                        <div class="bg-white bg-opacity-80 backdrop-blur-md p-8 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
+                        <div class="bg-white p-8 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
                             <h3 class="text-2xl font-bold mb-2 text-blue-800">Efficiency</h3>
                             <p>We leverage technology and expertise to deliver your goods with maximum speed and minimum cost.</p>
                         </div>
-                        <div class="bg-white bg-opacity-80 backdrop-blur-md p-8 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
+                        <div class="bg-white p-8 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105">
                             <h3 class="text-2xl font-bold mb-2 text-blue-800">Partnership</h3>
                             <p>We believe in building long-term relationships with our clients, acting as an extension of your team.</p>
                         </div>
@@ -174,37 +174,37 @@
                     <h2 class="text-4xl font-bold text-center mb-12 text-blue-900">Glimpses of Our Operations</h2>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                         <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                            <img src="https://picsum.photos/seed/gallery1/600/600" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110">
+                            <img src="{{ asset('images/gallery-1.jpg') }}" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110">
                             <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <p class="text-white text-lg font-bold">Busy Port</p>
                             </div>
                         </div>
                         <div class="group relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2">
-                             <img src="https://picsum.photos/seed/gallery2/1200/600" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110">
+                             <img src="{{ asset('images/gallery-2.jpg') }}" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110">
                              <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <p class="text-white text-lg font-bold">Warehouse Operations</p>
                             </div>
                         </div>
                         <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                            <img src="https://picsum.photos/seed/gallery3/600/600" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110">
+                            <img src="{{ asset('images/gallery-3.jpg') }}" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110">
                              <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <p class="text-white text-lg font-bold">Air Freight</p>
                             </div>
                         </div>
                          <div class="group relative overflow-hidden rounded-lg shadow-lg col-span-1 md:col-span-2">
-                             <img src="https://picsum.photos/seed/gallery4/1200/600" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110">
+                             <img src="{{ asset('images/gallery-4.jpg') }}" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110">
                             <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <p class="text-white text-lg font-bold">Container Management</p>
                             </div>
                         </div>
                         <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                            <img src="https://picsum.photos/seed/gallery5/600/600" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110">
+                            <img src="{{ asset('images/gallery-5.jpg') }}" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110">
                              <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <p class="text-white text-lg font-bold">Land Transport</p>
                             </div>
                         </div>
                          <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                             <img src="https://picsum.photos/seed/gallery6/600/600" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110">
+                             <img src="{{ asset('images/gallery-6.jpg') }}" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110">
                              <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <p class="text-white text-lg font-bold">Customs Paperwork</p>
                             </div>
@@ -213,7 +213,7 @@
                 </div>
             </section>
             
-            <section id="testimonials" class="py-20 bg-cover bg-fixed" style="background-image: url('https://picsum.photos/seed/testimonialsbg1/1920/1080')">
+            <section id="testimonials" class="py-20 bg-blue-900">
                 <div class="container mx-auto px-6">
                     <h2 class="text-4xl font-bold text-center mb-12 text-white">Trusted by Industry Leaders</h2>
                     <div class="grid md:grid-cols-3 gap-8">
@@ -275,7 +275,7 @@
                             </form>
                         </div>
                          <div class="h-full w-full rounded-lg overflow-hidden shadow-2xl">
-                             <img src="https://picsum.photos/seed/map1/800/1000" alt="Map" class="w-full h-full object-cover">
+                             <img src="{{ asset('images/contact-map.jpg') }}" alt="Map" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
