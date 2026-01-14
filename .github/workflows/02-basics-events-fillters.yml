@@ -1,6 +1,8 @@
-name: 01 basics events filters workflows
+name: 02 basics events filters workflows
 
-on: [push, pull_request]
+on: 
+    pull_request:
+        types: closed
 
 jobs:
     print-hello-world:
